@@ -60,4 +60,9 @@
     /* @apply bg-background text-foreground; */
     @apply font-primary;
   }
+
+  .underline-animation {
+    @apply absolute bottom-0 left-0 w-0 h-[2px] bg-bright transition-all duration-500 group-hover:w-full;
+  }
 }
+

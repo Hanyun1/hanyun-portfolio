@@ -1,4 +1,4 @@
-import JetBrains_Moni, { JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 

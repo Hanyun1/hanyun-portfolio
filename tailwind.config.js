@@ -10,12 +10,7 @@ module.exports = {
     container: {
       center: true,
       padding: "15px",
-      screens: {
-        sm: "100%",
-        md: "100%",
-        lg: "100%",
-        xl: "100%",
-      },
+      
     },
     screens: {
       sm: "640px",
@@ -68,7 +63,7 @@ module.exports = {
         //   4: "hsl(var(--chart-4))",
         //   5: "hsl(var(--chart-5))",
         // },
-        yellow: "#fbbf24",
+        bright: "#fbbf24",
       },
       borderRadius: {
         lg: "var(--radius)",

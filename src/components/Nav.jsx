@@ -1,26 +1,29 @@
+"use client"
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Nav = () => {
+    const pathname = usePathname();
   const navLinks = [
-    { href: "/about", label: "About" },
-    { href: "/projects", label: "Projects" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", name: "Home" },
+    { href: "/projects", name: "Projects" },
+    { href: "/contact", name: "Contact" },
   ];
 
   return (
-    <nav>
-      <ul className="flex space-x-6">
-        {navLinks.map((link) => (
-          <li key={link.href}>
-            <Link href={link.href}>
-              <h2 className="text-lg px-1 font-medium relative group">
-                {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-yellow transition-all duration-500 group-hover:w-full"></span>
-              </h2>
+    <nav className="flex space-x-6 ">
+     
+        {navLinks.map((link, index) => {
+          return (
+            <Link href={link.href} key={index} className={`${link.href === pathname && "border-b-2 border-bright"} text-lg px-1 font-medium relative group`}>
+                {link.name}
+                <span className={`${link.href !== pathname && "underline-animation"}`}></span>
+              
             </Link>
-          </li>
-        ))}
-      </ul>
+          )
+          
+})}
+   
     </nav>
   );
 };
