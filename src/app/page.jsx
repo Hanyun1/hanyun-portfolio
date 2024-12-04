@@ -2,6 +2,7 @@ import Photo from "@/components/home/Photo";
 import Social from "@/components/home/Social";
 import { Button } from "@/components/ui/button";
 import { FileDownIcon } from "lucide-react";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -26,13 +27,15 @@ const Home = () => {
 
             <div className="flex flex-col md:flex-row items-center justify-between gap-10">
               {/* Download CV button */}
-              <Button
-                size="lg"
-                className="items-center flex text-lg px-2 bg-bright font-medium hover:bg-gray-500 hover:text-bright"
-              >
-                <span>Download CV</span>
-                <FileDownIcon />
-              </Button>
+              <a href="/CV_Hanyun.pdf" download>
+                <Button
+                  size="lg"
+                  className="items-center flex text-lg px-2 bg-bright font-medium hover:bg-gray-500 hover:text-bright"
+                >
+                  <span>Download CV</span>
+                  <FileDownIcon />
+                </Button>
+              </a>
 
               <Social
                 containerStyles="flex gap-8"
