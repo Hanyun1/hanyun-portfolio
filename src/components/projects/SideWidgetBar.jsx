@@ -79,7 +79,7 @@ export default SideWidgetBar;
 const menuItems = [
   {
     id: "menu1",
-    title: "Menu 1",
+    title: "Work",
     submenus: [
       { id: "content1", title: "Submenu 1-1" },
       { id: "content2", title: "Submenu 1-2" },
@@ -87,7 +87,7 @@ const menuItems = [
   },
   {
     id: "menu2",
-    title: "Menu 2",
+    title: "Others",
     submenus: [
       { id: "content3", title: "Submenu 2-1" },
       { id: "content4", title: "Submenu 2-2" },

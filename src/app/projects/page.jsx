@@ -8,14 +8,16 @@ import { FaReact } from "react-icons/fa";
 
 const skills = [
   { name: "React", icon: <FaReact /> },
-  { name: "React2", icon: <FaReact /> },
-  { name: "React", icon: <FaReact /> },
-  { name: "React2", icon: <FaReact /> },
-  { name: "React", icon: <FaReact /> },
-  { name: "React2", icon: <FaReact /> },
-  { name: "React", icon: <FaReact /> },
-  { name: "React2", icon: <FaReact /> },
+  { name: "Next.js", icon: <FaReact /> },
+  { name: 'JavaScript', icon: <FaReact /> },
+  { name: 'TypeScript', icon: <FaReact /> },
 ];
+
+const submenuSkillMap = {
+  content1: ['React', 'Next.js'],
+  content2: ['JavaScript', 'TypeScript'],
+  // Add more mappings as needed
+};
 
 const contentMap = {
   content1: {
@@ -45,13 +47,17 @@ const Projects = () => {
 
   return (
     <section className="container pt-10 flex flex-col xl:flex-row items-center justify-between xl:gap-4 gap-20">
-      <div className="container bg-gray-100 basis-2/5">
-        <Skills />
+      <div className="container p-4 bg-gray-100 basis-2/5">
+        <Skills
+          skills={skills}
+          selectedSkills={submenuSkillMap[selectedContent] || []}
+        />
       </div>
 
       <div className="container bg-gray-100 basis-3/5 flex flex-col md:flex-row gap-2">
         <SideWidgetBar
           onSelect={setSelectedContent}
+          selectedContent={selectedContent}
           className="flex-3 basis-1/5"
         />
         <div className="flex p-4 basis-4/5">{renderContent()}</div>
