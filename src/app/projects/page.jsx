@@ -4,18 +4,33 @@ import Experience from "@/components/projects/Experience";
 import SideWidgetBar from "@/components/projects/SideWidgetBar";
 import Skills from "@/components/projects/Skill";
 import React, { useState } from "react";
-import { FaReact } from "react-icons/fa";
+import { FaJava, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { IoLogoJavascript } from "react-icons/io";
+import { FaFlutter, FaDartLang } from "react-icons/fa6";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMui, SiDotnet } from "react-icons/si";
 
 const skills = [
+  { name: "Java", icon: <FaJava /> },
+  { name: "Python", icon: <FaPython /> },
+  { name: "Dart", icon: <FaDartLang /> },
+  { name: "JavaScript", icon: <IoLogoJavascript /> },
+
   { name: "React", icon: <FaReact /> },
-  { name: "Next.js", icon: <FaReact /> },
-  { name: 'JavaScript', icon: <FaReact /> },
-  { name: 'TypeScript', icon: <FaReact /> },
+  { name: "Next.js", icon: <TbBrandNextjs /> },
+  { name: "Flutter", icon: <FaFlutter /> },
+
+  { name: "Node.js", icon: <FaNodeJs /> },
+  { name: "ASP.NET", icon: <SiDotnet /> },
+
+  { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
+  { name: "MUI", icon: <SiMui /> },
 ];
 
 const submenuSkillMap = {
-  content1: ['React', 'Next.js'],
-  content2: ['JavaScript', 'TypeScript'],
+  content1: ["React", "Next.js"],
+  content2: ["JavaScript", "TypeScript"],
   // Add more mappings as needed
 };
 
@@ -54,13 +69,16 @@ const Projects = () => {
         />
       </div>
 
-      <div className="container bg-gray-100 basis-3/5 flex flex-col md:flex-row gap-2">
-        <SideWidgetBar
-          onSelect={setSelectedContent}
-          selectedContent={selectedContent}
-          className="flex-3 basis-1/5"
-        />
-        <div className="flex p-4 basis-4/5">{renderContent()}</div>
+      <div className="container p-4 bg-gray-100 basis-3/5">
+        <div className="text-2xl font-bold ">Experiences</div>
+        <div className="flex flex-col md:flex-row gap-2">
+          <SideWidgetBar
+            onSelect={setSelectedContent}
+            selectedContent={selectedContent}
+            className="flex-3 basis-1/5"
+          />
+          <div className="flex p-4 basis-4/5">{renderContent()}</div>
+        </div>
       </div>
     </section>
   );
