@@ -13,8 +13,8 @@ const Skills = ({ skills, selectedSkills }) => {
               <Button
                 key={item.name}
                 className={`[&_svg]:size-5 flex flex-col h-[65px] w-[105px] border-2 ${
-                  isSelected ? "text-bright border-bright" : "" 
-                // } hover:text-bright hover:border-bright transition-all duration-500`}
+                  isSelected ? "text-bright border-bright" : ""
+                  // } hover:text-bright hover:border-bright transition-all duration-500`}
                 } bg-transparent cursor-default`}
               >
                 {item.icon}

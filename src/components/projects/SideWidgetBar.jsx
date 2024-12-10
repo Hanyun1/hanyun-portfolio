@@ -51,7 +51,9 @@ const SideWidgetBar = ({ onSelect }) => {
                     <button
                       onClick={() => handleSubmenuSelect(submenu.id)}
                       className={`text-left py-2 px-4 hover:bg-gray-200 duration-300 ${
-                        selectedSubmenu === submenu.id ? "text-bright border-l-4 border-bright" : ""
+                        selectedSubmenu === submenu.id
+                          ? "text-bright border-l-4 border-bright"
+                          : ""
                       }`}
                     >
                       {submenu.title}

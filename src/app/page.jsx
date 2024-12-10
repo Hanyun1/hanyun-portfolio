@@ -11,7 +11,6 @@ const Home = () => {
       <div className="container h-full mx-auto">
         <div className="pt-10 flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="basis-3/5 order-2 md:order-none flex flex-col items-center gap-10 ">
-            
             {/* text */}
             <div className="text-left">
               Hello, I&apos;m <br />{" "}
@@ -25,11 +24,11 @@ const Home = () => {
               {/* I completed my Master&apos;s in Software Engineering from
               the University of Melbourne, building upon my Bachelor&apos;s in
               Computing and Software Systems.  */}
-              I&apos;m passionate about cloud
-              computing, frontend development and photography.
+              I&apos;m passionate about cloud computing, frontend development
+              and photography.
             </div>
 
-            <Education/>
+            <Education />
 
             <div className="flex flex-col md:flex-row items-center justify-between gap-10">
               {/* Download CV button */}
