@@ -50,18 +50,18 @@ const SideWidgetBar = ({ onSelect }) => {
                   <li key={submenu.id} className="relative group">
                     <button
                       onClick={() => handleSubmenuSelect(submenu.id)}
-                      className={`text-left py-2 px-4 ${
-                        selectedSubmenu === submenu.id ? "text-bright" : ""
+                      className={`text-left py-2 px-4 hover:bg-gray-200 duration-300 ${
+                        selectedSubmenu === submenu.id ? "text-bright border-l-4 border-bright" : ""
                       }`}
                     >
                       {submenu.title}
-                      <span
+                      {/* <span
                         className={`underline-animation ${
                           selectedSubmenu === submenu.id
                             ? "w-full"
                             : "w-0 group-hover:w-full"
                         }`}
-                      ></span>
+                      ></span> */}
                     </button>
                   </li>
                 ))}

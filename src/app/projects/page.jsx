@@ -4,12 +4,12 @@ import Experience from "@/components/projects/Experience";
 import SideWidgetBar from "@/components/projects/SideWidgetBar";
 import Skills from "@/components/projects/Skill";
 import React, { useState } from "react";
-import { FaJava, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
+import { FaJava, FaNodeJs, FaPython, FaReact, FaGithub } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaFlutter, FaDartLang } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMui, SiDotnet } from "react-icons/si";
+import { SiMui, SiDotnet, SiGithubactions } from "react-icons/si";
 
 const skills = [
   { name: "Java", icon: <FaJava /> },
@@ -26,6 +26,9 @@ const skills = [
 
   { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
   { name: "MUI", icon: <SiMui /> },
+
+  { name: "GitHub", icon: <FaGithub /> },
+  { name: "GitHub Action", icon: <SiGithubactions /> },
 ];
 
 const submenuSkillMap = {
@@ -62,7 +65,7 @@ const Projects = () => {
 
   return (
     <section className="container pt-10 flex flex-col xl:flex-row items-center justify-between xl:gap-4 gap-20">
-      <div className="container p-4 bg-gray-100 basis-2/5">
+      <div className="container p-4 basis-2/5">
         <Skills
           skills={skills}
           selectedSkills={submenuSkillMap[selectedContent] || []}
