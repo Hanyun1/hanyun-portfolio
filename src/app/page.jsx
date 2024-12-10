@@ -3,7 +3,6 @@ import Photo from "@/components/home/Photo";
 import Social from "@/components/home/Social";
 import { Button } from "@/components/ui/button";
 import { FileDownIcon } from "lucide-react";
-import Link from "next/link";
 
 const Home = () => {
   return (
