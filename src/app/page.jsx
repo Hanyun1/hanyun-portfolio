@@ -1,3 +1,4 @@
+import Education from "@/components/home/Education";
 import Photo from "@/components/home/Photo";
 import Social from "@/components/home/Social";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,7 @@ const Home = () => {
       <div className="container h-full mx-auto">
         <div className="pt-10 flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="basis-3/5 order-2 md:order-none flex flex-col items-center gap-10 ">
+            
             {/* text */}
             <div className="text-left">
               Hello, I&apos;m <br />{" "}
@@ -19,11 +21,15 @@ const Home = () => {
                 Software Engineer
               </span>
               <br />
-              <br />I completed my Master&apos;s in Software Engineering from
+              <br />
+              {/* I completed my Master&apos;s in Software Engineering from
               the University of Melbourne, building upon my Bachelor&apos;s in
-              Computing and Software Systems. I&apos;m passionate about cloud
+              Computing and Software Systems.  */}
+              I&apos;m passionate about cloud
               computing, frontend development and photography.
             </div>
+
+            <Education/>
 
             <div className="flex flex-col md:flex-row items-center justify-between gap-10">
               {/* Download CV button */}
