@@ -1,8 +1,8 @@
+import Education from "@/components/home/Education";
 import Photo from "@/components/home/Photo";
 import Social from "@/components/home/Social";
 import { Button } from "@/components/ui/button";
 import { FileDownIcon } from "lucide-react";
-import Link from "next/link";
 
 const Home = () => {
   return (
@@ -19,11 +19,15 @@ const Home = () => {
                 Software Engineer
               </span>
               <br />
-              <br />I completed my Master&apos;s in Software Engineering from
+              <br />
+              {/* I completed my Master&apos;s in Software Engineering from
               the University of Melbourne, building upon my Bachelor&apos;s in
-              Computing and Software Systems. I&apos;m passionate about cloud
-              computing, frontend development and photography.
+              Computing and Software Systems.  */}
+              I&apos;m passionate about cloud computing, frontend development
+              and photography.
             </div>
+
+            <Education />
 
             <div className="flex flex-col md:flex-row items-center justify-between gap-10">
               {/* Download CV button */}
