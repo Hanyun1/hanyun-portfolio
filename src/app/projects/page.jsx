@@ -4,7 +4,14 @@ import Experience from "@/components/projects/Experience";
 import SideWidgetBar from "@/components/projects/SideWidgetBar";
 import Skills from "@/components/projects/Skill";
 import React, { useState } from "react";
-import { FaJava, FaNodeJs, FaPython, FaReact, FaGithub, FaFigma } from "react-icons/fa";
+import {
+  FaJava,
+  FaNodeJs,
+  FaPython,
+  FaReact,
+  FaGithub,
+  FaFigma,
+} from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaFlutter, FaDartLang } from "react-icons/fa6";
@@ -45,7 +52,6 @@ const Projects = () => {
     </section>
   );
 };
-
 
 const skills = [
   { name: "Java", icon: <FaJava /> },
@@ -90,6 +96,5 @@ const contentMap = {
   },
   // Add more mappings as needed
 };
-
 
 export default Projects;
