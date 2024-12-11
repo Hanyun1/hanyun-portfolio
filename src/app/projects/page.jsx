@@ -4,53 +4,12 @@ import Experience from "@/components/projects/Experience";
 import SideWidgetBar from "@/components/projects/SideWidgetBar";
 import Skills from "@/components/projects/Skill";
 import React, { useState } from "react";
-import { FaJava, FaNodeJs, FaPython, FaReact, FaGithub } from "react-icons/fa";
+import { FaJava, FaNodeJs, FaPython, FaReact, FaGithub, FaFigma } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaFlutter, FaDartLang } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMui, SiDotnet, SiGithubactions } from "react-icons/si";
-
-const skills = [
-  { name: "Java", icon: <FaJava /> },
-  { name: "Python", icon: <FaPython /> },
-  { name: "Dart", icon: <FaDartLang /> },
-  { name: "JavaScript", icon: <IoLogoJavascript /> },
-
-  { name: "React", icon: <FaReact /> },
-  { name: "Next.js", icon: <TbBrandNextjs /> },
-  { name: "Flutter", icon: <FaFlutter /> },
-
-  { name: "Node.js", icon: <FaNodeJs /> },
-  { name: "ASP.NET", icon: <SiDotnet /> },
-
-  { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
-  { name: "MUI", icon: <SiMui /> },
-
-  { name: "GitHub", icon: <FaGithub /> },
-  { name: "GitHub Action", icon: <SiGithubactions /> },
-];
-
-const submenuSkillMap = {
-  content1: ["React", "Next.js"],
-  content2: ["JavaScript", "TypeScript"],
-  // Add more mappings as needed
-};
-
-const contentMap = {
-  content1: {
-    title: "Title for Content 1",
-    content: `Details about Content 1:
-    - Point 1
-    - Point 2
-    - Point 3`,
-  },
-  content2: {
-    title: "Title for Content 2",
-    content: "Details about Content 2",
-  },
-  // Add more mappings as needed
-};
+import { SiMui, SiDotnet, SiGithubactions, SiTypescript } from "react-icons/si";
 
 const Projects = () => {
   const [selectedContent, setSelectedContent] = useState(null);
@@ -86,5 +45,51 @@ const Projects = () => {
     </section>
   );
 };
+
+
+const skills = [
+  { name: "Java", icon: <FaJava /> },
+  { name: "Python", icon: <FaPython /> },
+  { name: "Dart", icon: <FaDartLang /> },
+  { name: "JavaScript", icon: <IoLogoJavascript /> },
+  { name: "TypeScript", icon: <SiTypescript /> },
+
+  { name: "React", icon: <FaReact /> },
+  { name: "Next.js", icon: <TbBrandNextjs /> },
+  { name: "Flutter", icon: <FaFlutter /> },
+
+  { name: "Node.js", icon: <FaNodeJs /> },
+  { name: "ASP.NET", icon: <SiDotnet /> },
+
+  { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
+  { name: "MUI", icon: <SiMui /> },
+
+  { name: "GitHub", icon: <FaGithub /> },
+  { name: "GitHub Action", icon: <SiGithubactions /> },
+
+  { name: "Figma", icon: <FaFigma /> },
+];
+
+const submenuSkillMap = {
+  content1: ["React", "Next.js"],
+  content2: ["JavaScript", "TypeScript"],
+  // Add more mappings as needed
+};
+
+const contentMap = {
+  content1: {
+    title: "Title for Content 1",
+    content: `Details about Content 1:
+    - Point 1
+    - Point 2
+    - Point 3`,
+  },
+  content2: {
+    title: "Title for Content 2",
+    content: "Details about Content 2",
+  },
+  // Add more mappings as needed
+};
+
 
 export default Projects;
