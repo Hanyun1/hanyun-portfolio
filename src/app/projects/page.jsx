@@ -11,12 +11,21 @@ import {
   FaReact,
   FaGithub,
   FaFigma,
+  FaAws,
 } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaFlutter, FaDartLang } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMui, SiDotnet, SiGithubactions, SiTypescript } from "react-icons/si";
+import {
+  SiMui,
+  SiDotnet,
+  SiGithubactions,
+  SiTypescript,
+  SiMongodb,
+} from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { IoLogoFirebase } from "react-icons/io5";
 
 const Projects = () => {
   const [selectedContent, setSelectedContent] = useState(null);
@@ -26,7 +35,7 @@ const Projects = () => {
       const props = contentMap[selectedContent];
       return <Experience {...props} />;
     }
-    return <div>Select an option from the sidebar</div>;
+    return <div className="h-[500px] ">Select an option from the sidebar</div>;
   };
 
   return (
@@ -74,11 +83,34 @@ const skills = [
   { name: "GitHub Action", icon: <SiGithubactions /> },
 
   { name: "Figma", icon: <FaFigma /> },
+
+  { name: "MongoDB", icon: <SiMongodb /> },
+  { name: "Postgre", icon: <BiLogoPostgresql /> },
+  { name: "Firebase", icon: <IoLogoFirebase /> },
+
+  { name: "AWS", icon: <FaAws /> },
 ];
 
 const submenuSkillMap = {
-  content1: ["React", "Next.js"],
-  content2: ["JavaScript", "TypeScript"],
+  content1: ["Flutter", "Dart", "Figma"],
+  content2: ["React", "Next.js", "TypeScript"],
+  content3: ["React", "Flutter", "Dart", "Figma", "GitHub", "JavaScript"],
+  content4: [],
+  content5: [
+    "MongoDB",
+    "React",
+    "JavaScript",
+    "Node.js",
+    "GitHub",
+    "Figma",
+    "MUI",
+  ],
+  content6: ["MongoDB", "Node.js", "GitHub", "Figma", "MUI"],
+  content7: ["React", "JavaScript", "Next.js", "GitHub", "Tailwind CSS"],
+  // content3: ["React", ],
+  // content3: ["React", ],
+  // content3: ["React", ],
+  // content3: ["React", ],
   // Add more mappings as needed
 };
 
