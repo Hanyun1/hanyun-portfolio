@@ -1,12 +1,7 @@
-"use client";
-
 import Link from "next/link";
 import Nav from "./Nav";
-import { useRouter } from "next/navigation";
 
 const Header = () => {
-  const router = useRouter();
-
   return (
     <header className="py-5 xl:py-7 bg-gray-200">
       <div className="container flex mx-auto px-5 py-5 items-center justify-between">
