@@ -23,8 +23,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="container pt-10 items-center justify-between ">
-      <div className="container p-4 bg-gray-100 flex flex-col gap-3">
+    <section className="container pt-20 items-center justify-between">
+      <div className="container p-4 bg-gray-100 flex flex-col gap-3 rounded">
         <div className="text-2xl font-bold ">Contact Me</div>
         <div className="text-md text-gray-500 ">
           If you have any questions or just want to say hi, feel free to send me
@@ -38,9 +38,19 @@ const Contact = () => {
           className="p-4 border-2 flex flex-col gap-6"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Input type="firstname" name="firstname" placeholder="Firstname" />
+            <Input
+              type="firstname"
+              name="firstname"
+              placeholder="Firstname *"
+              required
+            />
             <Input type="lastname" name="lastname" placeholder="Lastname" />
-            <Input type="email" name="email" placeholder="Email Address" />
+            <Input
+              type="email"
+              name="email"
+              placeholder="Email Address *"
+              required
+            />
             <Input type="tel" name="phone" placeholder="Phone Number" />
           </div>
           <Textarea name="message" placeholder="Type your message here." />
