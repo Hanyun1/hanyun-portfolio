@@ -26,6 +26,7 @@ import {
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
+import { SiMysql } from "react-icons/si";
 
 const Projects = () => {
   const [selectedContent, setSelectedContent] = useState(null);
@@ -87,6 +88,7 @@ const skills = [
   { name: "MongoDB", icon: <SiMongodb /> },
   { name: "Postgre", icon: <BiLogoPostgresql /> },
   { name: "Firebase", icon: <IoLogoFirebase /> },
+  { name: "MySQL", icon: <SiMysql /> },
 
   { name: "AWS", icon: <FaAws /> },
 ];
@@ -107,7 +109,7 @@ const submenuSkillMap = {
   ],
   content6: ["MongoDB", "Node.js", "GitHub", "Figma", "MUI"],
   content7: ["React", "JavaScript", "Next.js", "GitHub", "Tailwind CSS"],
-  // content3: ["React", ],
+  content8: ["ASP.NET", "MySQL", "GitHub Action", "GitHub", "AWS"],
   // content3: ["React", ],
   // content3: ["React", ],
   // content3: ["React", ],
@@ -129,7 +131,7 @@ const contentMap = {
     title: "Rapid Quote System Website",
     location: "Tekt Industries, Melbourne",
     content: [
-      "Maintained, tested and resolved 10+ bugs on the front end of the 'Rapid Quote System' website for its beta version, utilizing Next.js(React).",
+      "Maintained, tested and resolved 10+ bugs on the front end of the 'Rapid Quote System' website for its beta version, utilizing Next.js(React), Mantine.",
       // "",
       // "",
       // "",
@@ -193,6 +195,29 @@ const contentMap = {
       // "",
     ],
   },
+  content8: {
+    title: "Cloud Reminder Mobile App",
+    location: null,
+    content: [
+      "Developed a cloud-based mobile reminder application enabling users to leave messages for event recalls, collaborating in a team of 3, and utilising React Native, ASP.NET Core, MySQL, and AWS services.",
+      "Led the design and development of the cloud infrastructure, including solution architecture, and implemented services such as IAM, EC2, ASG, ALB, and RDS.",
+      "Established and automated the CI/CD pipeline using GitHub Actions and AWS CodeDeploy, integrating Postman tests to ensure reliability.",
+      "Resolved 20+ critical issues in the .NET backend, including authentication failures and database routing errors, enhancing system performance and stability.",
+      // "",
+    ],
+  },
+  // content7: {
+  //   title: "Portfolio Website",
+  //   location: null,
+  //   content: [
+  //     "This portfolio",
+  //     // "",
+  //     // "",
+  //     // "",
+  //     // "",
+  //     // "",
+  //   ],
+  // },
 };
 
 export default Projects;
