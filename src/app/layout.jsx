@@ -1,6 +1,7 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import NextTopLoader from "nextjs-toploader";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={jetbrainsMono.variable} suppressHydrationWarning={true}>
         <Header />
+        <NextTopLoader />
         {children}
       </body>
     </html>
