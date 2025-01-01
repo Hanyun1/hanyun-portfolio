@@ -1,6 +1,7 @@
 "use client";
 
 import ConfirmPopUp from "@/components/contact/ConfirmPopUp";
+import Info from "@/components/contact/Info";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -24,8 +25,14 @@ const Contact = () => {
 
   return (
     <section className="container pt-20 items-center justify-between">
-      <div className="container p-4 bg-gray-100 flex flex-col gap-3 rounded">
+      <div className="container p-4 bg-gray-100 flex flex-col gap-5 rounded">
         <div className="text-2xl font-bold ">Contact Me</div>
+
+        {/* personal info */}
+        <div className="border-l-2 p-6 w-fit">
+          <Info />
+        </div>
+
         <div className="text-md text-gray-500 ">
           If you have any questions or just want to say hi, feel free to send me
           any messages.
