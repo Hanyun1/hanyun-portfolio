@@ -10,7 +10,7 @@ const Photo = () => {
         relative overflow-hidden rounded-full"
       >
         <Image
-          src="/profile.png"
+          src="/profile.jpeg"
           priority
           quality={100}
           fill

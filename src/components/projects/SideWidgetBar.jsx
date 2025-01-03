@@ -96,6 +96,7 @@ const menuItems = [
     id: "menu2",
     title: "Others",
     submenus: [
+      { id: "content8", title: "Cloud Reminder" },
       { id: "content3", title: "Atomos ScreenEnhanc." },
       { id: "content4", title: "F.M. Enhanc." },
       { id: "content5", title: "Application Manager" },
