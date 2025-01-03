@@ -36,7 +36,11 @@ const Projects = () => {
       const props = contentMap[selectedContent];
       return <Experience {...props} />;
     }
-    return <div className="h-[500px] ">Select an option from the sidebar</div>;
+    return (
+      <div className="h-[500px] border w-full p-3">
+        Select an option from the sidebar
+      </div>
+    );
   };
 
   return (

@@ -3,7 +3,10 @@
 import { useState, useRef, useEffect } from "react";
 
 const SideWidgetBar = ({ onSelect }) => {
-  const [openSubmenus, setOpenSubmenus] = useState({});
+  const [openSubmenus, setOpenSubmenus] = useState({
+    menu1: true,
+    menu2: true,
+  });
   const [selectedSubmenu, setSelectedSubmenu] = useState(null);
   const submenuRefs = useRef({});
 
