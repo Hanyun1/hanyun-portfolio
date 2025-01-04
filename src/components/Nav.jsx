@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const Nav = () => {
+const Nav = ({ className }) => {
   const pathname = usePathname();
   const navLinks = [
     { href: "/", name: "Home" },
@@ -11,7 +11,7 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="flex space-x-6 ">
+    <nav className={`${className}`}>
       {navLinks.map((link, index) => {
         return (
           <Link
