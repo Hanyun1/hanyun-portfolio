@@ -67,6 +67,7 @@ module.exports = {
         bright: {
           DEFAULT: "#f59e0b",
           darker: "#d97706",
+          lighter: "#fcd34d",
         },
       },
       borderRadius: {
