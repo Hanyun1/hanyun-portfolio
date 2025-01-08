@@ -10,7 +10,7 @@ const Experience = ({ title, location, content }) => {
       <ul className="w-full flex flex-col gap-2 ">
         {content.map((item) => {
           return (
-            <li key={item} className="text-xs">
+            <li key={item} className="text-sm/[24px] font-extralight">
               <span className="font-black">· </span>
               {item}
             </li>

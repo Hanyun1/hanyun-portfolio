@@ -44,15 +44,15 @@ const Projects = () => {
   };
 
   return (
-    <section className="container pt-10 flex flex-col xl:flex-row items-center justify-between xl:gap-4 gap-20">
-      <div className="container p-4 basis-2/5">
+    <section className="container pt-10 flex flex-col xl:flex-row items-center justify-between gap-4">
+      <div className="container p-1 basis-2/5 xl:order-2">
         <Skills
           skills={skills}
           selectedSkills={submenuSkillMap[selectedContent] || []}
         />
       </div>
 
-      <div className="container p-4 bg-gray-100">
+      <div className="container p-4 bg-gray-100 xl:order-1">
         <div className="text-2xl font-bold ">Experiences</div>
         <div className="flex flex-col md:flex-row gap-2">
           <SideWidgetBar

@@ -41,7 +41,7 @@ const SideWidgetBar = ({ onSelect }) => {
             <li key={menu.id}>
               <button
                 onClick={() => handleSubmenuToggle(menu.id)}
-                className="w-full text-left py-2 flex justify-between items-center"
+                className="w-full text-left py-2 flex justify-between items-center font-semibold"
               >
                 <span>{menu.title}</span>
                 <span>{openSubmenus[menu.id] ? "-" : "+"}</span>
