@@ -5,9 +5,9 @@ import { usePathname } from "next/navigation";
 const Nav = ({ className }) => {
   const pathname = usePathname();
   const navLinks = [
-    { href: "/", name: "Home" },
-    { href: "/projects", name: "Projects" },
-    { href: "/contact", name: "Contact" },
+    { href: "#home", name: "Home" },
+    { href: "#projects", name: "Projects" },
+    { href: "#contact", name: "Contact" },
   ];
 
   return (
@@ -15,8 +15,10 @@ const Nav = ({ className }) => {
       {navLinks.map((link, index) => {
         return (
           <Link
-            href={link.href}
-            key={index}
+          href={link.href}
+          smooth={true}
+          duration={500}
+          key={index}
             className={`${link.href === pathname && "border-b-2 border-bright"} text-lg px-1 font-medium relative group`}
           >
             {link.name}
