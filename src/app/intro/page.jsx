@@ -7,7 +7,7 @@ import { FileDownIcon } from "lucide-react";
 const Intro = () => {
   return (
     <section id="home">
-      <div className="container h-full mx-auto">
+      <div className="container mx-auto">
         <div className="pt-10 flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="basis-3/5 order-2 md:order-none flex flex-col items-center gap-10 ">
             {/* text */}
