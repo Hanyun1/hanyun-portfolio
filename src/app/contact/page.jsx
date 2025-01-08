@@ -24,7 +24,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="container pt-20 items-center justify-between">
+    <section
+      id="contact"
+      className="container pt-20 items-center justify-between"
+    >
       <div className="container p-4 bg-gray-100 flex flex-col gap-5 rounded">
         <div className="text-2xl font-bold ">Contact Me</div>
 

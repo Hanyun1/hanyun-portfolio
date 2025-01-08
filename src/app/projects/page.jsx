@@ -44,7 +44,10 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="container pt-10 flex flex-col xl:flex-row items-center justify-between gap-4">
+    <section
+      id="projects"
+      className="container pt-10 flex flex-col xl:flex-row items-center justify-between gap-4"
+    >
       <div className="container p-1 basis-2/5 xl:order-2">
         <Skills
           skills={skills}
