@@ -20,7 +20,7 @@ const Header = () => {
 
           {/* Hire me special button */}
           <a
-            href="mailto:hanyzhang1@gmail.com"
+            href="mailto:hanyunzhang11@gmail.com"
             target="_blank"
             className="text-lg px-2 bg-bright font-medium hover:bg-gray-500 hover:text-bright"
           >

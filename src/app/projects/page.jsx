@@ -55,7 +55,7 @@ const Projects = () => {
         />
       </div>
 
-      <div className="container p-4 bg-gray-100 xl:order-1">
+      <div className="container p-4 bg-gradient-to-r from-gray-200 via-transparent rounded xl:order-1">
         <div className="text-2xl font-bold ">Experiences</div>
         <div className="flex flex-col md:flex-row gap-2">
           <SideWidgetBar
