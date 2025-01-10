@@ -1,22 +1,33 @@
 import React from "react";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdDriveFileRenameOutline } from "react-icons/md";
 import { FaPhoneVolume, FaLocationDot } from "react-icons/fa6";
+import { IoMdFemale } from "react-icons/io";
 
 const info = [
+  // {
+  //   title: "Name",
+  //   icon: <MdDriveFileRenameOutline />,
+  //   desciption: "Hanyun Zhang",
+  // },
+  {
+    title: "Pronounce",
+    icon: <IoMdFemale />,
+    desciption: "She/Her",
+  },
   {
     title: "Email",
     icon: <MdEmail />,
-    desciption: "hanyzhang1@gmail.com",
+    desciption: "hanyunzhang11@gmail.com",
   },
-  {
-    title: "Phone",
-    icon: <FaPhoneVolume />,
-    desciption: "0481180542",
-  },
+  // {
+  //   title: "Phone",
+  //   icon: <FaPhoneVolume />,
+  //   desciption: "0481180542",
+  // },
   {
     title: "Location",
     icon: <FaLocationDot />,
-    desciption: "600 Doncaster Rd, Doncaster, Mebourne, Australia",
+    desciption: "Doncaster, Mebourne, Australia",
   },
 ];
 

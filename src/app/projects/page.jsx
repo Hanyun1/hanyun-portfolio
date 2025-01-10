@@ -44,7 +44,10 @@ const Projects = () => {
   };
 
   return (
-    <section className="container pt-10 flex flex-col xl:flex-row items-center justify-between gap-4">
+    <section
+      id="projects"
+      className="container pt-10 flex flex-col xl:flex-row items-center justify-between gap-4"
+    >
       <div className="container p-1 basis-2/5 xl:order-2">
         <Skills
           skills={skills}
@@ -52,7 +55,7 @@ const Projects = () => {
         />
       </div>
 
-      <div className="container p-4 bg-gray-100 xl:order-1">
+      <div className="container p-4 bg-gradient-to-r from-gray-200 via-transparent rounded xl:order-1">
         <div className="text-2xl font-bold ">Experiences</div>
         <div className="flex flex-col md:flex-row gap-2">
           <SideWidgetBar
