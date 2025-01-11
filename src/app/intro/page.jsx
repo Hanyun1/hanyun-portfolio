@@ -11,7 +11,7 @@ const Intro = () => {
         <div className="pt-10 flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="basis-3/5 order-2 md:order-none flex flex-col items-center gap-10 ">
             {/* text */}
-            <div className="text-left">
+            <div className="text-left container">
               Hello, I&apos;m <br />{" "}
               <span className="text-4xl font-semibold">Hanyun Zhang</span>, a
               <br />
