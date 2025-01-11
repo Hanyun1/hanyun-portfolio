@@ -34,7 +34,9 @@ const Projects = () => {
   const renderContent = () => {
     if (selectedContent && contentMap[selectedContent]) {
       const props = contentMap[selectedContent];
-      return <Experience {...props} />;
+      return (
+        <Experience {...props} contentHighlightWord={contentHighlightWord} />
+      );
     }
     return (
       <div className="h-[500px] border w-full p-3">
@@ -123,6 +125,28 @@ const submenuSkillMap = {
   // Add more mappings as needed
 };
 
+const contentHighlightWord = [
+  "Flutter",
+  "React",
+  "Figma",
+  "Node.js",
+  "AWS",
+  "Next.js",
+  "Mantine",
+  "Websocket",
+  "CRM",
+  "MongoDB",
+  "Express",
+  "Javascript",
+  "MVC",
+  "GitHub Actions",
+  "Agile",
+  ".NET",
+  "ASP.NET Core",
+  "CURD",
+  "MySQL",
+];
+
 const contentMap = {
   content1: {
     title: "Evolve MVMT Mobile App",
@@ -133,16 +157,18 @@ const contentMap = {
       "Adhering closely to Agile methodologies with a cross-functional team, precisely tracking tasks through Wrike, including updating statuses, writing descriptions and estimating time.",
       "Actively participated in project meetings, contributing innovative ideas for efficient task management.",
     ],
+    path: "https://play.google.com/store/apps/details?id=com.evolvemvmt&hl=en_AU&pli=1",
   },
   content2: {
-    title: "Rapid Quote System Website",
+    title: "Rapid Order System Website",
     location: "Tekt Industries, Melbourne",
     content: [
-      "Maintained, tested and resolved 10+ bugs on the front end of the 'Rapid Quote System' website for its beta version, utilizing Next.js(React), Mantine.",
+      "Maintained, tested and resolved 10+ bugs on the front end of the 'Rapid Order System' website for its beta version, utilizing Next.js(React), Mantine.",
       // "",
       // "",
       // "",
     ],
+    path: "https://www.tektindustries.com/service-streams/rapid-order-system",
   },
   content3: {
     title: "Atomos UI/UX Screen Enhancement",

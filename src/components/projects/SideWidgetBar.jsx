@@ -89,7 +89,7 @@ const menuItems = [
     title: "Work",
     submenus: [
       { id: "content1", title: "Evolve MVMT" },
-      { id: "content2", title: "Rapid Quote System" },
+      { id: "content2", title: "Rapid Order System" },
     ],
   },
   {

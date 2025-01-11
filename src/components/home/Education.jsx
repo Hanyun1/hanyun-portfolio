@@ -16,7 +16,7 @@ const edu = [
 
 const Education = () => {
   return (
-    <div className="flex flex-col w-full justify-center items-center border-l-2">
+    <div className="flex flex-col container border-l-2">
       {edu.map((item) => {
         return (
           <div
