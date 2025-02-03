@@ -120,7 +120,7 @@ const submenuSkillMap = {
   ],
   content6: ["MongoDB", "Node.js", "GitHub", "Figma", "MUI"],
   content7: ["React", "JavaScript", "Next.js", "GitHub", "Tailwind CSS"],
-  content8: ["ASP.NET", "MySQL", "GitHub Action", "GitHub", "AWS", "Tailwind CSS", "React Native"],
+  content8: ["ASP.NET", "MySQL", "GitHub Action", "GitHub", "AWS", "Tailwind CSS", "React Native", "JavaScript", "Figma"],
   // content3: ["React", ],
   // content3: ["React", ],
   // content3: ["React", ],
@@ -133,7 +133,7 @@ const contentHighlightWord = [
   "Figma",
   "Node.js",
   "AWS",
-  "AWS CodeDeploy",
+  "CodeDeploy",
   "Next.js",
   "Mantine",
   "Websocket",
@@ -155,7 +155,7 @@ const contentHighlightWord = [
   "RDS",
   "CI/CD",
   "Postman",
-  "React Native"
+  "Native",
 ];
 
 const contentMap = {
