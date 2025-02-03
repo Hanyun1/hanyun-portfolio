@@ -17,6 +17,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaFlutter, FaDartLang } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { TbBrandReactNative } from "react-icons/tb";
 import {
   SiMui,
   SiDotnet,
@@ -80,6 +81,7 @@ const skills = [
   { name: "TypeScript", icon: <SiTypescript /> },
 
   { name: "React", icon: <FaReact /> },
+  { name: "React Native", icon: <TbBrandReactNative /> },
   { name: "Next.js", icon: <TbBrandNextjs /> },
   { name: "Flutter", icon: <FaFlutter /> },
 
@@ -118,7 +120,7 @@ const submenuSkillMap = {
   ],
   content6: ["MongoDB", "Node.js", "GitHub", "Figma", "MUI"],
   content7: ["React", "JavaScript", "Next.js", "GitHub", "Tailwind CSS"],
-  content8: ["ASP.NET", "MySQL", "GitHub Action", "GitHub", "AWS"],
+  content8: ["ASP.NET", "MySQL", "GitHub Action", "GitHub", "AWS", "Tailwind CSS", "React Native"],
   // content3: ["React", ],
   // content3: ["React", ],
   // content3: ["React", ],
@@ -131,6 +133,7 @@ const contentHighlightWord = [
   "Figma",
   "Node.js",
   "AWS",
+  "AWS CodeDeploy",
   "Next.js",
   "Mantine",
   "Websocket",
@@ -145,6 +148,14 @@ const contentHighlightWord = [
   "ASP.NET Core",
   "CURD",
   "MySQL",
+  "IAM",
+  "EC2",
+  "ASG",
+  "ALB",
+  "RDS",
+  "CI/CD",
+  "Postman",
+  "React Native"
 ];
 
 const contentMap = {
@@ -235,7 +246,8 @@ const contentMap = {
       "Developed a cloud-based mobile reminder application enabling users to leave messages for event recalls, collaborating in a team of 3, and utilising React Native, ASP.NET Core, MySQL, and AWS services.",
       "Led the design and development of the cloud infrastructure, including solution architecture, and implemented services such as IAM, EC2, ASG, ALB, and RDS.",
       "Established and automated the CI/CD pipeline using GitHub Actions and AWS CodeDeploy, integrating Postman tests to ensure reliability.",
-      "Resolved 20+ critical issues in the .NET backend, including authentication failures and database routing errors, enhancing system performance and stability.",
+      "Implemented the home page front end using React Native.",
+      "Resolved 10+ critical issues in the .NET backend, including authentication failures and database routing errors, enhancing system performance and stability.",
       // "",
     ],
   },
